@@ -135,7 +135,7 @@
 
 - (void)applyStylesToRange:(NSRange)searchRange
 {
-    if (self.editedRange.location == NSNotFound)
+    if ( (self.editedRange.location == NSNotFound) || !self.string )
     {
         return;
     }
